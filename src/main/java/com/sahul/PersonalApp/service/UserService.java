@@ -8,11 +8,14 @@ public class UserService {
 
 	public boolean validateLogin(Login login) {
 		
-		if (login.getUserName().equals("sahul.hameed.a@gmail.com") &&
-				login.getPassword().equals("pwd"))
-			return true;
+		//simulating Exception to validate Global Exception controller
+		throw new RuntimeException("Database is down, unable to validate login credentials");
 		
-		return false;
+		//if (login.getUserName().equals("sahul.hameed.a@gmail.com") &&
+		//		login.getPassword().equals("pwd"))
+		//	return true;
+		
+		//return false;
 		
 	}
 }
