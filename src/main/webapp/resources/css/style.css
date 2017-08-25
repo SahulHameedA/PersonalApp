@@ -20,6 +20,14 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+.container .text-warning {
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: red;
+}
+
 button {
     background-color: #4CAF50;
     color: white;

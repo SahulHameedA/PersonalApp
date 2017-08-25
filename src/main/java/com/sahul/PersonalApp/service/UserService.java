@@ -8,7 +8,7 @@ public class UserService {
 
 	public boolean validateLogin(Login login) {
 		
-		if (login.getUserName().equals("sahul") &&
+		if (login.getUserName().equals("sahul.hameed.a@gmail.com") &&
 				login.getPassword().equals("pwd"))
 			return true;
 		
