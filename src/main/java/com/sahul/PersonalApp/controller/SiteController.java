@@ -18,8 +18,9 @@ public class SiteController {
 	 * @return
 	 */
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String showLoginPage() {		
-		logger.info("Loading the Home page for the user ...");
+	public String showLoginPage() {
+		//commenting out the logging function. Now, the logging is handled in the AOP -- smart !!!
+		//logger.info("Loading the Home page for the user ...");
 		return "home";		
 	}	
 	
@@ -30,7 +31,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/career", method = RequestMethod.GET)
 	public String showCareerPage() {		
-		logger.info("Loading the Career page for the user ...");
+		//logger.info("Loading the Career page for the user ...");
 		return "career";		
 	}
 	
@@ -40,7 +41,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/documents", method = RequestMethod.GET)
 	public String showDocumentsPage() {		
-		logger.info("Loading the Documents page for the user ...");
+		//logger.info("Loading the Documents page for the user ...");
 		return "documents";		
 	}
 	
@@ -50,7 +51,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/education", method = RequestMethod.GET)
 	public String showEducationPage() {		
-		logger.info("Loading the Education page for the user ...");
+		//logger.info("Loading the Education page for the user ...");
 		return "education";		
 	}
 	
@@ -60,7 +61,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/finance", method = RequestMethod.GET)
 	public String showFinancePage() {		
-		logger.info("Loading the Finance page for the user ...");
+		//logger.info("Loading the Finance page for the user ...");
 		return "finance";		
 	}
 	
@@ -70,7 +71,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/islam", method = RequestMethod.GET)
 	public String showIslamPage() {		
-		logger.info("Loading the Islam page for the user ...");
+		//logger.info("Loading the Islam page for the user ...");
 		return "islam";		
 	}
 	
@@ -80,7 +81,7 @@ public class SiteController {
 	 */
 	@RequestMapping(value = "/settings", method = RequestMethod.GET)
 	public String showSettingsPage() {		
-		logger.info("Loading the Settings page for the user ...");
+		//logger.info("Loading the Settings page for the user ...");
 		return "settings";		
 	}
 				
