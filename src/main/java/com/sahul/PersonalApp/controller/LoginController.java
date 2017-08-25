@@ -31,9 +31,12 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String showLoginPage(ModelMap model) {		
-		model.addAttribute("login",new Login());
-		return "login";		
+	public String showLoginPage(ModelMap model) {	
+		// i am simulating to validate the exception handling
+		throw new RuntimeException("testing ... testing ...");
+		
+		//model.addAttribute("login",new Login());
+		//return "login";		
 	}
 	
 	/**
